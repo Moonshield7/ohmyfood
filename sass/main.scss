@@ -1,0 +1,17 @@
+@import "base/reset";
+@import "base/typography";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+@import "layout/header";
+@import "components/logo";
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    // background-color: gray;
+}

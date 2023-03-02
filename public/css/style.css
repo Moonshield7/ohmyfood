@@ -1,0 +1,21 @@
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: azure;
+}
+
+.logo {
+  height: 40px;
+  width: fit-content;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=style.css.map */
