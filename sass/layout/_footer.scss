@@ -1,0 +1,27 @@
+.footer {
+    background-color: $color-bg-footer;
+    color: $color-font-footer;
+    font-family: $font-family-text;
+    width: 100%;
+    height: 210px;
+    padding: 20px 20px;
+    @include flex(column, space-around, flex-start);
+    &__title {
+        font-family: $font-family-title;
+        font-size: 20px;
+    }
+    &__list {
+        height: 90%;
+        width: 100%;
+        margin-top: 10px;
+        @include flex(column, space-evenly, flex-start);
+        &__link {
+            &--strong {
+                font-weight: 500;
+            }
+            &__icon {
+                margin-right: 10px;
+            }
+        }
+    }
+}

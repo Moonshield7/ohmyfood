@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: $color-font-footer;
+    :visited {
+        color: $color-font-footer;
+    }
+}
+
+li {
+    list-style: none;
+}
