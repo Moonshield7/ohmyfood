@@ -16,6 +16,24 @@ li {
   list-style: none;
 }
 
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 200;
+}
+
+h2 {
+  font-size: 1.9em;
+}
+
+p {
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
 header {
   width: 100%;
   height: 100px;
@@ -57,15 +75,179 @@ header {
   margin-right: 10px;
 }
 
-.logo {
-  height: 40px;
-  width: fit-content;
+.section-1 {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-1__location {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(244, 242, 242);
+  font-weight: 600;
+}
+.section-1__location i {
+  margin-right: 10px;
+}
+.section-1__order-container {
+  width: 90%;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.section-2 {
+  margin-top: 50px;
+  padding: 15px;
+  width: 100%;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.section-2__instructions {
+  width: 100%;
+  height: 90%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.section-2__instructions__step {
+  width: 330px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 20px;
+  background-color: rgb(244, 242, 242);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.157);
+}
+.section-2__instructions__step__nb {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #9356DC;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  left: -15px;
+}
+.section-2__instructions__step__text {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-align: center;
+}
+.section-2__instructions__step__text i {
+  margin-right: 30px;
+  margin-left: 5px;
+  font-size: 23px;
+  color: gray;
+}
+
+.section-3 {
+  margin-top: 50px;
+  padding: 20px;
+  width: 100%;
+  height: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.section-3__restaurants {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.section-3__restaurants__card {
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.157);
+  background-color: white;
+  width: 350px;
+  height: 280px;
+  border-radius: 15px;
+}
+.section-3__restaurants__card img {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  object-position: 50% 90%;
+}
+.section-3__restaurants__card__textbox {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 10px 15px;
+}
+.section-3__restaurants__card__textbox__text {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.section-3__restaurants__card__textbox__heart {
+  width: 10%;
+  height: 50%;
+  font-size: 25px;
+}
+.section-3__restaurants__card__textbox__heart i {
+  position: absolute;
+}
+.section-3__restaurants__card__textbox__heart--full {
+  color: #9356DC;
+  opacity: 0%;
+  transition: all 700ms;
+}
+.section-3__restaurants__card__textbox__heart--full:hover {
+  opacity: 100%;
+}
+
+button {
+  width: 250px;
+  height: 60px;
+  background-image: linear-gradient(170deg, #FF79DA, #9356DC);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.157);
+}
+button:hover {
+  background-image: linear-gradient(170deg, #ff93e1, #a16be0);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.396);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -5,14 +5,7 @@
 @import "abstracts/mixins";
 @import "layout/header";
 @import "layout/footer";
-@import "components/logo";
-
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    // background-color: gray;
-}
+@import "layout/section-1";
+@import "layout/section-2";
+@import "layout/section-3";
+@import "components/button";

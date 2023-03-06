@@ -5,8 +5,14 @@ $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $color-bg-footer: rgb(39, 38, 38);
 $color-font-footer: rgb(244, 242, 242);
+$color-bg-main:rgb(244, 242, 242);
 
 // Font families :
 
 $font-family-text: 'Roboto', sans-serif;
 $font-family-title: 'Shrikhand', cursive;
+
+// Box shadow :
+
+$box-shadow-main: 5px 5px 15px 5px rgba(0, 0, 0, 0.157);
+$box-shadow-dark: 5px 5px 15px 5px rgba(0, 0, 0, 0.396);
