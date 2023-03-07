@@ -6,12 +6,20 @@
 
 a {
     text-decoration: none;
-    color: $color-font-footer;
+    color: black;
     :visited {
-        color: $color-font-footer;
+        color: black;
     }
 }
 
 li {
     list-style: none;
+}
+
+body {
+    margin: auto;
+    max-width: 1400px;
+    @media screen and (min-width:768px) {
+        padding : 0 50px;
+    }
 }

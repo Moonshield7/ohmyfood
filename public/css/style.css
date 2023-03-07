@@ -6,14 +6,24 @@
 
 a {
   text-decoration: none;
-  color: rgb(244, 242, 242);
+  color: black;
 }
 a :visited {
-  color: rgb(244, 242, 242);
+  color: black;
 }
 
 li {
   list-style: none;
+}
+
+body {
+  margin: auto;
+  max-width: 1400px;
+}
+@media screen and (min-width: 768px) {
+  body {
+    padding: 0 50px;
+  }
 }
 
 * {
@@ -40,7 +50,14 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: azure;
+}
+header a {
+  width: 25px;
+  height: 25px;
+  color: black;
+  font-size: 20px;
+  position: relative;
+  left: -250px;
 }
 
 .footer {
@@ -54,6 +71,13 @@ header {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
+}
+.footer a {
+  text-decoration: none;
+  color: rgb(244, 242, 242);
+}
+.footer a :visited {
+  color: rgb(244, 242, 242);
 }
 .footer__title {
   font-family: "Shrikhand", cursive;
@@ -169,13 +193,14 @@ header {
 }
 
 .section-3 {
+  background-color: #f2f2f2;
   margin-top: 50px;
-  padding: 20px;
+  padding: 50px 20px;
   width: 100%;
   height: 1400px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: flex-start;
 }
 .section-3__restaurants {
@@ -217,21 +242,109 @@ header {
   justify-content: space-around;
   align-items: flex-start;
 }
-.section-3__restaurants__card__textbox__heart {
-  width: 10%;
-  height: 50%;
-  font-size: 25px;
+
+.restaurant-picture {
+  width: 100%;
+  height: auto;
+  content: cover;
 }
-.section-3__restaurants__card__textbox__heart i {
-  position: absolute;
+
+.background-grey {
+  background-color: #f2f2f2;
 }
-.section-3__restaurants__card__textbox__heart--full {
-  color: #9356DC;
-  opacity: 0%;
-  transition: all 700ms;
+
+.menu {
+  position: relative;
+  top: -55px;
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+  background-color: #f2f2f2;
+  padding: 30px 15px;
 }
-.section-3__restaurants__card__textbox__heart--full:hover {
-  opacity: 100%;
+.menu__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.menu__title h2 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 300;
+}
+.menu__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin: 30px 0 50px 0;
+}
+.menu__section__title h3 {
+  color: gray;
+  font-weight: 500;
+}
+.menu__section__title__underline {
+  width: 50px;
+  height: 3px;
+  background-color: #99E2D0;
+  margin-top: 5px;
+}
+.menu__section__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px -2px rgba(0, 0, 0, 0.3529411765);
+  padding-left: 15px;
+  margin-top: 15px;
+  width: 360px;
+  height: 70px;
+}
+.menu__section__card__text {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.menu__section__card__text__dots {
+  opacity: 0;
+}
+.menu__section__card__text p {
+  font-size: 16px;
+}
+.menu__section__card__price {
+  width: 20%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.menu__section__card__check {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  display: none;
+}
+.menu__order {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 button {
@@ -248,6 +361,26 @@ button {
 button:hover {
   background-image: linear-gradient(170deg, #ff93e1, #a16be0);
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.396);
+}
+
+.heart {
+  width: 10%;
+  height: 50%;
+  font-size: 25px;
+}
+.heart i {
+  position: absolute;
+}
+.heart--full {
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0%;
+  transition: all 1000ms ease-in;
+}
+.heart--full:hover {
+  opacity: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

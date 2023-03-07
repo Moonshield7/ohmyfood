@@ -6,6 +6,13 @@
     height: 210px;
     padding: 20px 20px;
     @include flex(column, space-around, flex-start);
+    a {
+        text-decoration: none;
+        color: $color-font-footer;
+        :visited {
+            color: $color-font-footer;
+        }
+    }
     &__title {
         font-family: $font-family-title;
         font-size: 20px;
