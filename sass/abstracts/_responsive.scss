@@ -1,0 +1,58 @@
+@media screen and (min-width: 470px) and (max-width:1000px) {
+    body{
+        padding : 0 25px;
+    }
+    header a{
+        left: -300px;
+    }
+    .section-2 {
+        @include flex(column, center, center)
+    }
+    .section-3 {
+        height: 800px;
+        &__restaurants {
+            justify-content: center;
+            @include flex(row, space-around, center);
+            flex-wrap: wrap;
+            &__card {
+                width: 45%;
+                height: 40%;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width : 900px) {
+    body {
+        padding : 0 50px;
+    }
+    header a{
+        left: -500px;
+    }
+    .section-1 {
+        height: 250px;
+    }
+    .section-2 {
+        height: 150px;
+        &__instructions {
+            @include flex(row, space-between, center);
+            &__step{
+                width: 30%;
+            }
+        }
+        
+    }
+    .section-3 {
+        height: 1200px;
+        &__restaurants {
+            justify-content: center;
+            @include flex(row, space-around, center);
+            flex-wrap: wrap;
+            &__card {
+                width: 45%;
+                height: 40%;
+            }
+        }
+    }
+}

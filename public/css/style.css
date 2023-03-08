@@ -20,11 +20,6 @@ body {
   margin: auto;
   max-width: 1400px;
 }
-@media screen and (min-width: 768px) {
-  body {
-    padding: 0 50px;
-  }
-}
 
 * {
   font-family: "Roboto", sans-serif;
@@ -184,6 +179,7 @@ header a {
   font-weight: 600;
   font-size: 1.05rem;
   text-align: center;
+  padding-right: 5px;
 }
 .section-2__instructions__step__text i {
   margin-right: 30px;
@@ -347,7 +343,11 @@ header a {
   align-items: center;
 }
 
-button {
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 250px;
   height: 60px;
   background-image: linear-gradient(170deg, #FF79DA, #9356DC);
@@ -358,7 +358,7 @@ button {
   font-weight: 400;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.157);
 }
-button:hover {
+.button:hover {
   background-image: linear-gradient(170deg, #ff93e1, #a16be0);
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.396);
 }
@@ -381,6 +381,74 @@ button:hover {
 }
 .heart--full:hover {
   opacity: 100%;
+}
+
+@media screen and (min-width: 470px) and (max-width: 1000px) {
+  body {
+    padding: 0 25px;
+  }
+  header a {
+    left: -300px;
+  }
+  .section-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-3 {
+    height: 800px;
+  }
+  .section-3__restaurants {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .section-3__restaurants__card {
+    width: 45%;
+    height: 40%;
+  }
+}
+@media screen and (min-width: 900px) {
+  body {
+    padding: 0 50px;
+  }
+  header a {
+    left: -500px;
+  }
+  .section-1 {
+    height: 250px;
+  }
+  .section-2 {
+    height: 150px;
+  }
+  .section-2__instructions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section-2__instructions__step {
+    width: 30%;
+  }
+  .section-3 {
+    height: 1200px;
+  }
+  .section-3__restaurants {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .section-3__restaurants__card {
+    width: 45%;
+    height: 40%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

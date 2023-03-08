@@ -1,4 +1,5 @@
-button {
+.button {
+    @include flex(row, center, center);
     width: 250px;
     height: 60px;
     background-image: linear-gradient(170deg, $color-secondary, $color-primary);
