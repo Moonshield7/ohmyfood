@@ -1,0 +1,9 @@
+.section-2__instructions__step {
+    transition: all 500ms;
+        &:hover {
+            background-color: lighten($color-primary, 30%);
+            i {
+                color: $color-primary;
+            }
+        }
+}
