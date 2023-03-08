@@ -1,4 +1,5 @@
-@media screen and (min-width: 470px) and (max-width:1000px) {
+@media screen and (min-width: 470px) and (max-width:900px) {
+    // Page d'accueil
     body{
         padding : 0 25px;
     }
@@ -20,10 +21,22 @@
             }
         }
     }
+    // Page restaurant 
+    .menu {
+        &__section {
+            @include flex(column, center, center);
+            flex-wrap: wrap;
+            &__title {
+                width: 360px;
+            }
+        }
+
+    }
 }
 
 
 @media screen and (min-width : 900px) {
+    // Page d'accueil
     body {
         padding : 0 50px;
     }
@@ -54,5 +67,18 @@
                 height: 40%;
             }
         }
+    }
+    // Page restaurant
+
+    .menu {
+        &__section {
+            width: 790px;
+            @include flex(row, flex-start, center);
+            flex-wrap: wrap;
+            &__card {
+                margin-right: 20px;
+            }
+        }
+
     }
 }
