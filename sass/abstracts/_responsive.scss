@@ -71,14 +71,11 @@
     // Page restaurant
 
     .menu {
+        // width: 790px;
+        @include flex(row, space-around, center);
+        flex-wrap: wrap;
         &__section {
-            width: 790px;
-            @include flex(row, flex-start, center);
-            flex-wrap: wrap;
-            &__card {
-                margin-right: 20px;
-            }
+            width: 30%;
         }
-
     }
 }
