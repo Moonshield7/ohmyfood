@@ -11,17 +11,17 @@
     <!-- Ajout de fontawesome-->
     <script src="https://kit.fontawesome.com/6121bb2f79.js" crossorigin="anonymous"></script>
     <!-- Lien avec la feuille de style -->
-    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="../public/css/style.css">
     <title>À la française</title>
 </head>
 <body>
     <header class="header">
         <h1>ohmyfood</h1>
-        <a href="./index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
     </header>
     <main class="background-grey">
         <!-- Photographie du plat du restaurant -->
-        <img src="./public/images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photographie d'un plat" class="restaurant-picture">
+        <img src="../public/images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photographie d'un plat" class="restaurant-picture">
         <!-- Section qui slide vers le haut -->
         <section class="menu">
             <div class="menu__title">
@@ -46,8 +46,10 @@
                     <div class="menu__section__card__price">
                         <h4>25€</h4>
                     </div>
-                    <div class="menu__section__card__check">
-                        <i class="fa-solid fa-circle-check"></i>
+                    <div class="menu__section__card__wrap">
+                        <div class="menu__section__card__check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
                 </div>
                 <!-- Carte entrée 2 -->
@@ -59,8 +61,10 @@
                     <div class="menu__section__card__price">
                         <h4>35€</h4>
                     </div>
-                    <div class="menu__section__card__check">
-                        <i class="fa-solid fa-circle-check"></i>
+                    <div class="menu__section__card__wrap">
+                        <div class="menu__section__card__check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
                 </div>
                 <!-- Carte entrée 3 -->
@@ -72,8 +76,10 @@
                     <div class="menu__section__card__price">
                         <h4>20€</h4>
                     </div>
-                    <div class="menu__section__card__check">
-                        <i class="fa-solid fa-circle-check"></i>
+                    <div class="menu__section__card__wrap">
+                        <div class="menu__section__card__check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -92,8 +98,10 @@
                     <div class="menu__section__card__price">
                         <h4>40€</h4>
                     </div>
-                    <div class="menu__section__card__check">
-                        <i class="fa-solid fa-circle-check"></i>
+                    <div class="menu__section__card__wrap">
+                        <div class="menu__section__card__check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
                 </div>
                 <!-- Carte plat 2 -->
@@ -105,11 +113,13 @@
                     <div class="menu__section__card__price">
                         <h4>35€</h4>
                     </div>
-                    <div class="menu__section__card__check">
-                        <i class="fa-solid fa-circle-check"></i>
+                    <div class="menu__section__card__wrap">
+                        <div class="menu__section__card__check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
                 </div>
-                <!-- Carte entrée 3 -->
+                <!-- Carte plat 3 -->
                 <div class="menu__section__card delay-5">
                     <div class="menu__section__card__text">
                         <h4>Pigeonneau d’Ille-et-Vilaine</h4>
@@ -118,8 +128,10 @@
                     <div class="menu__section__card__price">
                         <h4>44€</h4>
                     </div>
-                    <div class="menu__section__card__check">
-                        <i class="fa-solid fa-circle-check"></i>
+                    <div class="menu__section__card__wrap">
+                        <div class="menu__section__card__check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -138,8 +150,10 @@
                     <div class="menu__section__card__price">
                         <h4>18€</h4>
                     </div>
-                    <div class="menu__section__card__check">
-                        <i class="fa-solid fa-circle-check"></i>
+                    <div class="menu__section__card__wrap">
+                        <div class="menu__section__card__check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
                 </div>
                 <!-- Carte dessert 2 -->
@@ -151,26 +165,30 @@
                     <div class="menu__section__card__price">
                         <h4>22€</h4>
                     </div>
-                    <div class="menu__section__card__check">
-                        <i class="fa-solid fa-circle-check"></i>
+                    <div class="menu__section__card__wrap">
+                        <div class="menu__section__card__check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
                 </div>
                 <!-- Carte dessert 3 -->
                 <div class="menu__section__card delay-8">
                     <div class="menu__section__card__text">
                         <h4>Millefeuille croustillant</h4>
-                        <p>Myrtilles et pâte d’amande tadadada</p>
+                        <p>Myrtilles et pâte d’amande</p>
                     </div>
                     <div class="menu__section__card__price">
                         <h4>23€</h4>
                     </div>
-                    <div class="menu__section__card__check">
-                        <i class="fa-solid fa-circle-check"></i>
+                    <div class="menu__section__card__wrap">
+                        <div class="menu__section__card__check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="menu__order">
-                <button class="button">Commander</button>
+                <button class="button button--order delay-9">Commander</button>
             </div>
         </section>
 

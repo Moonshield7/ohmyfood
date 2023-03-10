@@ -72,7 +72,7 @@
 
     .menu {
         // width: 790px;
-        @include flex(row, space-around, center);
+        @include flex(row, space-around, flex-start);
         flex-wrap: wrap;
         &__section {
             width: 30%;
