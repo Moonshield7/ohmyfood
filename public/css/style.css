@@ -214,6 +214,23 @@ header a {
   height: 280px;
   border-radius: 15px;
 }
+.section-3__restaurants__card__labelnew {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 40px;
+  background-color: #99E2D0;
+  color: #278870;
+  border-radius: 3px;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  left: 95%;
+  top: -300%;
+  margin: -60px;
+}
 .section-3__restaurants__card img {
   border-radius: 15px 15px 0 0;
   width: 100%;

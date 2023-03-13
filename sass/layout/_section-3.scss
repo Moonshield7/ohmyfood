@@ -15,6 +15,21 @@
             width: 350px;
             height: 280px;
             border-radius: 15px;
+            &__labelnew{
+                @include flex(row, center, center);
+                width: 90px;
+                height: 40px;
+                background-color: $color-tertiary;
+                color: darken($color-tertiary, 40%);
+                border-radius: 3px;
+                font-weight: 700;
+                text-align: center;
+                position: relative;
+                left: 95%;
+                top: -300%;
+                margin: -60px
+                
+            }
             img {
                 border-radius: 15px 15px 0 0;
                 width: 100%;
