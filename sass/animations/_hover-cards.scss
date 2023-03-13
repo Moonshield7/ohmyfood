@@ -1,0 +1,14 @@
+.menu__section__card {
+    &:hover {
+        .menu__section__card__wrap{
+            transform: scaleX(1);
+            margin: 0;
+        }
+        i {
+            transform: rotate(360deg);
+        }
+    }
+    &__check i {
+        transition: all 800ms ease-out;
+    }
+}
