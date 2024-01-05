@@ -1,5 +1,5 @@
 # Projet 3 - OHMYFOOD : Dynamisez une page web avec des animations
-## Par Fannie PRESMAN 
+## Par Moonshield
 ### Du 2 mars 2023 au 13 mars 2023
 
 La branche **intégration** est celle sur laquelle la majorité du travail a été effectué. Au cours du développement, les autres branches ont été merge sur **intégration**.
